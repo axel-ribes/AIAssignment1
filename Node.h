@@ -16,5 +16,6 @@ public :
 	std::pair<int, int> getCoordinates();
 	std::map<Node, int>* getEdges();
 	void addEdge(Node neighbour, int weight);
+	bool operator < (Node node2) const; //Visual is sending and error if not overloading this operator
 
 }; //Node

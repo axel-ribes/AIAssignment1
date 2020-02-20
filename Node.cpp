@@ -20,3 +20,7 @@ std::map<Node, int>* Node::getEdges() {
 void Node::addEdge(Node neighbour, int weight) {
 	edges->insert(std::pair<Node, int>(neighbour, weight));
 }
+
+bool Node::operator < (Node node2) const{
+	return this->getID() < node2.getID();
+}
